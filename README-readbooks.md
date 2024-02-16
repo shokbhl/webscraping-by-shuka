@@ -3,6 +3,56 @@ Note:  Initial Codes - This section contains the initial attempts where you migh
 Final Codes - This section contains the improved and corrected version of the code. Specify how each issue identified in the initial codes was resolved.
 
 The final three code snippets constitute the successful ultimate code. 
+
+Architecture Overview:
+Input:
+
+Wikipedia URL.
+Starting letter for author names.
+Component 1: Wikipedia Scraper (BeautifulSoup):
+
+Fetches the HTML content from the Wikipedia page using requests.
+Parses the HTML content using BeautifulSoup.
+Extracts author names from links that start with the specified letter.
+Component 2: Open Library API Interaction:
+
+For each author, sends a request to the Open Library API using requests.
+Retrieves information about the author's works, specifically the first book.
+Output:
+
+Displays the author names and their corresponding first book titles.
+Flow of Data and Interactions:
+Wikipedia Scraper (BeautifulSoup):
+
+Fetches HTML content from Wikipedia.
+Parses HTML to extract author names.
+Loop through Authors:
+
+For each author, send a request to the Open Library API to get information about their works.
+Extract the first book title for each author.
+Display Results:
+
+Print or display the extracted author names and their first book titles.
+
+
+
+
+        +-------------------+           +-----------------------+
+        |                   |           |                       |
+        | Wikipedia Scraper |  --Data-->|  Open Library API     |
+        | (BeautifulSoup)   |           |                       |
+        +-------------------+           +-----------------------+
+                      |                           |
+                      |                           |
+                      v                           v
+        +-------------------+           +-----------------------+
+        |                   |           |                       |
+        |   Display Results |<--Data----|    Display Results    |
+        |                   |           |                       |
+        +-------------------+           +-----------------------+
+
+
+
 Purpose:
 
 This code extracts author names and the titles of their first books from a Wikipedia page.
