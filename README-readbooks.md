@@ -1,10 +1,14 @@
 
-Note:  Initial Codes - This section contains the initial attempts where you might have encountered issues or problems. 
+Note: 
+Initial Codes - This section contains the initial attempts where you might have encountered issues or problems. 
+
 Final Codes - This section contains the improved and corrected version of the code. Specify how each issue identified in the initial codes was resolved.
 
-The final three code snippets constitute the successful ultimate code. 
+
+Important: The final three code snippets constitute the successful ultimate code. 
 
 Architecture Overview:
+
 Input:
 
 Wikipedia URL.
