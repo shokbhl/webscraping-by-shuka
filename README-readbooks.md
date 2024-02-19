@@ -87,6 +87,9 @@ Interaction Diagram:
 |   Display Results |<--Data----|    Display Results    |
 |                   |           |                       |
 +-------------------+           +-----------------------+
+
+
+
 Purpose:
 Wikipedia Scraper:
 Extracts author names and the titles of their first books from a Wikipedia page.
